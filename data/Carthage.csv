@@ -1,0 +1,36 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Carthage",,,,,,,,,,,,,,,,,,,,,
+"Carthage Army Ability - Determination - You may spend a Command Action and mark a Determination Box on one of your units. Units with a marked box get Courage +1. If a unit with a marked box fails to deal damage with an attack, you may erase the mark to have that attack deal one damage Foresight - When you build your army you may spend army points to buy Foresight at a cost of 10 army points per point of Foresight. Before regular deployment your opponent must deploy one unit for each point of Foresight.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# selected","Type","# Available",
+"Balearic Slingers","?(",3,")","5*","/","5*","?","1*","/",0,"7""",11,"5""",3,2,1,73,,"Core",7,0
+"Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged. Ranged attack is Line of Sight.","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",4,2,4,242,,"Core",6,
+"Caetrati","?(",3,")",5,"/",4,"?","1*","/",0,"5""",11,"5""",3,2,1,85,,"Core",7,0
+"Skirmisher. Ranged attack uses the Javelin rule. ?+2/+0 vs. ranged attacks.","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",4,2,4,216,,"Core",7,
+"Gallic Warriors","?(",5,")",5,"/",5,"?",2,"/",1,"N/A",13,"3.5""",3,3,4,160,,"Core",7,0
+"Impulsive. (At the start of any turn Gallic Warriors are within 7"" of an enemy unit's center point, its orders change to Close.)","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,4,4,295,,"Core",7,
+"Scutarii","?(",5,")",5,"/",5,"?",2,"/",1,"3.5""",12,"3.5”",4,3,3,181,,"Core",7,0
+"Range attack uses the Pila rule.",,,,,,,,,,,,,,3,2,3,158,,"Core",5,
+"Spanish Cavalry","?(",4,")",6,"/",5,"?","2*","/",1,"N/A",12,"6""",3,2,1,185,,"Core",5,0
+"Cavalry. ?+1/+0 while Charging.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,2,4,142,,"Core",9,
+"Libyan Foot","?(",5,")",6,"/",5,"?",2,"/",2,"3.5""",13,"3.5”",4,3,3,275,,"Core",7,0
+"Range attack uses the Pila rule.",,,,,,,,,,,,,,3,3,2,200,,"Core",4,
+"Carthaginian Spearmen","?(","6*",")","5*","/","5*","?",2,"/",2,"N/A",12,"3.5""",4,3,3,214,,"N/A",7,0
+"?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. ",,,,,,,,,,,,,,2,2,2,214,,"N/A",5,
+"Gallic Cavalry","?(",4,")",5,"/",6,"?","2*","/",2,"6""",13,"6""",3,2,1,222,,"N/A",5,0
+"Cavalry. ?+1/+0 while Charging. Impulsive. (At the start of any turn Gallic Warriors are within 7"" of an enemy unit's center point, its orders change to Close.)","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",8,2,5,900,,"N/A",2,
+"Numidian Cavalry","?(",3,")",5,"/",4,"?","3*","/",1,"3.5""",12,"7""",3,1,2,167,,"N/A",5,0
+"Does not cause or take Impact Hits. Ranged attack uses the Javelin rule. Skirmishers, Cavalry and ranged attacks against Numidian Cavalry get ?(-2) -0/-0.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,4,4,345,,"N/A",3,
+"Elephants","?(",5,")",5,"/",6,"?",1,"/",3,"N/A",11,"5""",5,4,4,285,,"Elite",4,0
+"Large. Fearsome. (Terrifying to Cavalry.) Two Impact Hits. May not be empowered with Determination.",,,,,,,,,,,,,,3,2,1,360,,"Elite",4,
+"Hannibals' Elite","?(",5,")",6,"/",5,"?",3,"/",2,"3.5""",13,"3.5""",5,3,3,345,,"Elite",4,0
+"Range attack uses the Pila rule.",,,,,,,,,,,,,,7,2,5,500,,"Elite",4,
+"Moorish Archers","?(",3,")","5*","/","5*","?","1*","/",0,"10.5""",10,"3.5""",3,2,1,77,,"Elite",3,0
+"Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged. Ranged attack is Line of Sight. May not be empowered with Determination.","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",5,4,5,600,,"Elite",3,
+"Foresight","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",10,0,"N/A","N/A",0
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"0","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,2000,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1
+"Errata: There was a misprint on the Scutarii. The defense skill should be 2/1 not 2/2 as printed.",,,,,,,,,,,,,,,,,,,,,

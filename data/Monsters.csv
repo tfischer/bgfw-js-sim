@@ -1,0 +1,36 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Monsters & Mercenaries",,,,,,,,,,,,,,,,,,,,,
+"Mercenary Army Ability - Spoils - You may pay one Command Actions to mark a Spoils box on a Non-Routing unit. After that unit rolls a courage check, you may erase its mark to lower that roll by two. You may erase more than one mark on a single courage roll. You may also erase a mark to Rally that unit at the begining of any Movement and Command Phase, before Final Rushes are declared. (Note: a Rallied unit may not Move, Shoot or recive a new Standing Order the turn it is Rallied.)",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost",,"Type","# Available",
+"Half-Orc Spearmen","?(","6*",")","5*","/","5*","?",2,"/",3,"N/A",11,"3.5”",4,2,4,242,,"Core",6,0
+"?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,4,2,4,242,,"Core",6,
+"Half-Orc Swordmen","?(",5,")",5,"/",5,"?",2,"/",3,"N/A",11,"3.5”",4,2,4,216,4,"Core",7,864
+,,,,,,,,,,,,,,4,2,4,216,,"Core",7,
+"Ogres","?(",5,")",5,"/",6,"?",2,"/",3,"N/A",12,"5”",4,4,4,295,,"Core",7,0
+"Large. Fearsome. Stupid. (Changing Standing Orders, taking Direct Control or Rallying this unit costs two Command Actions rather than one.)","?(",5,")",5,"/",6,"?",2,"/",3,"N/A",12,"5”",4,4,4,295,,"Core",7,
+"Wildmen Archers","?(",4,")","5*","/","5*","?",1,"/",1,"14”",11,"3.5”",3,2,3,158,,"Core",5,0
+"?(-0) -2/-2 and while Engaged.",,,,,,,,,,,,,,3,2,3,158,,"Core",5,
+"Wildmen Sword","?(",5,")",5,"/",5,"?",2,"/",1,"N/A",11,"3.5”",4,2,4,142,,"Core",9,0
+,,,,,,,,,,,,,,4,2,4,142,,"Core",9,
+"Healer Mages","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",11,"3.5”",3,3,2,200,1,"N/A",4,200
+"During your turn, if this unit is Unengaged, it may cast one of the following spells: Aura Cleanse (Blessing/Healing) Range: 7"", Put an Aura Cleanse marker on a friendly unit. Heal (Healing) Range: 7"" Remove one damage from a friendly unit or zero damage if it is Lard or Cavalry. If the unit has An Aura Cleanse marker you may remove it to heal one additional damage.","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",11,"3.5”",3,3,2,200,,"N/A",4,
+"Wildmen Horse Archers","?(",4,")",5,"/",5,"?","2*","/",1,"10.5”",11,"6”",2,2,2,214,,"N/A",5,0
+"Cavalry. ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) No penalty for Move and Shoot.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",2,2,2,214,,"N/A",5,
+"Ancient Red Dragon","?(",6,")",6,"/",8,"?",2,"/",4,"N/A",14,"5”*",8,2,5,900,,"Elite",2,0
+"Large. Fearsome. Flying: MC 10.5"" Red Dragon may breathe fire twice during a battle. Mark off a fire icon to give Red Dragon Range 7"" (Line of Sight) this turn. To play a Command Card on Ancient Red Dragon you must first discard two other Command Cards.","?(",5,")",6,"/",7,"?",2,"/",4,"*",13,"5”*",8,2,5,900,,"Elite",2,
+"Earth Elemental","?(",5,")",4,"/",8,"?",1,"/",4,"N/A","N/A","5”",4,4,4,345,,"Elite",3,0
+"Large. Fearsome. Always has the Close Standing Order and may not be given a Standing Order Modifier or be Directly Controlled. To play a Command Card on Earth Elemental you must first discard two other Command Cards.","?(",5,")",5,"/",6,"?",2,"/",3,"N/A",12,"5”",4,4,4,345,,"Elite",3,
+"Elementalist","?(",3,")",6,"/",5,"?",2,"/",2,"*",11,"3.5”",3,2,1,360,,"Elite",4,0
+"During your turn, if this unit is Unengaged, it may cast one of the following spells: Lightning Strike (Attack) ?(2)7/7 Range: 17.5"" Lightning Strike is unaffected by Command Cards from either player. Fireball (Attack) ?(4)6/6 Range: 10.5""","?(",3,")",6,"/",5,"?",2,"/",2,"*",11,"3.5”",3,2,1,360,,"Elite",4,
+"Hill Giant","?(",5,")",5,"/",8,"?",1,"/",4,"*",13,"6”",7,2,5,500,,"Elite",4,0
+"Large. Fearsome. Stupid. (Changing Standing Orders, taking Direct Control or Rallying this unit costs two Command Actions rather than one.) You may spend two Command Actions to have Hill Giant gain Range 21"" this turn. To play a Command Card on Hill Giant you must first discard two other Command Cards.","?(",5,")",5,"/",6,"?",2,"/",3,"N/A",12,"5”",7,2,5,500,,"Elite",4,
+"Hydra","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",5,4,5,600,,"Elite",3,0
+"Colossal. Terrifying. Passes all Courage Checks. Always has the Close Standing Order and may not be given a Standing Order Modifier or be Directly Controlled. At the start of your Movement and Command Phase. Hydra heals one damage. Each time Hydra heals in this way it gains ?(+1) +0/+0 permanently. To Play a Command Card on Hydra you must first discard two other command cards.","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",5,4,5,600,,"Elite",3,
+"Red Dragon","?(",5,")",6,"/",7,"?",2,"/",4,"*",13,"5”*",6,2,4,691,1,"Elite",3,691
+"Large. Fearsome. Flying: MC 10.5"" Red Dragon may breathe fire twice during a battle. Mark off a fire icon to give Red Dragon Range 7"" (Line of Sight) this turn. To play a Command Card on Red Dragon you must first discard two other Command Cards.","?(",5,")",6,"/",7,"?",2,"/",4,"*",13,"5”*",6,2,4,691,,"Elite",3,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"1755","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,245,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1

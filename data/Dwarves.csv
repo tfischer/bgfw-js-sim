@@ -1,0 +1,34 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Dwarves",,,,,,,,,,,,,,,,,,,,,
+"Dwarves of Runegard Army Ability - Rune of Uruz - You may spend a Command Actions to empower one of your units with Uruz, Rune of Endurance. That unit gets a permanent ?(+1) +0/+0 while engaged. the mark is erased and the bonus lost if the unit routs. Note: Rune of Uruz gives no bonus to ranged attacks. Sprint - You may spend a Command Action to Sprint one of your units. That unit's base MC becomes 3.5"" for the turn. Hills - Dwarves get no movement penalty for moving up hill terrain.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",
+"Dwarven Axemen","?(",5,")",5,"/",5,"?",2,"/",3,"N/A",12,"2.5""*",4,4,4,240,1,"Core",7,240
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,,,
+"Dwarven Battleaxemen","?(",5,")",5,"/",6,"?",1,"/",3,"N/A",13,"2.5""*",4,4,4,248,,"Core",6,0
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,,,
+"Dwarven Bowmen","?(",4,")","5*","/","5*","?",0,"/",2,"14""",12,"2.5""*",3,3,3,158,,"Core",6,0
+"?(-0) -2/-2 and while Engaged. MC 3.5"" when Routing of Final Rushing. (Note: Rune of Uruz gives no bonus to ranged attacks.)",,,,,,,,,,,,,,,,,,,,,
+"Dwarven Militia","?(",5,")",4,"/",5,"?",2,"/",2,"N/A",12,"2.5""*",4,4,4,157,1,"Core",7,157
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,,,0
+"Dwarven Spearmen","?(","6*",")","5*","/","5*","?",2,"/",3,"N/A",12,"2.5""*",4,4,4,269,2,"Core",6,538
+"?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,,,
+"Dwarven Crossbowmen","?(","3*",")",5,"/",5,"?","1*","/",3,"14""",12,"2.5""*",4,4,4,255,,"N/A",7,0
+"?(+2) +0/+0 and ?+1/+0 while Engaged. Range attack is Line of Sight. MC 3.5"" when Routing of Final Rushing. (Note: Rune of Uruz gives no bonus to ranged attacks.)",,,,,,,,,,,,,,,,,,,"N/A",,
+"Dwarven Hammermen","?(",7,")",5,"/",5,"?",1,"/",3,"N/A",13,"2.5""*",4,4,4,258,,"N/A",5,0
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,"N/A",,
+"Shortbeards","?(",5,")",4,"/",5,"?",1,"/",2,"N/A",11,"2.5""*",3,4,3,107,,"N/A",7,0
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,"N/A",,
+"Dwarven Miners","?(",4,")",4,"/",7,"?",1,"/",2,"N/A",12,"2.5""*",4,4,4,144,,"N/A",5,0
+"MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,"N/A",,
+"Antonian Horsemen","?(",6,")",6,"/","5*","?","3*","/",1,"N/A",12,"7""",2,2,2,280,2,"Elite",4,560
+"Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging bonus.) May not Sprint. May not be empowered with Rune of Uruz.",,,,,,,,,,,,,,,,,,,,,
+"Dwarven Ballista","?(","4*",")","5*","/","7*","?",1,"/",2,"21""",12,"2.5""",3,2,2,294,,"Elite",4,0
+"?(-1) -1/-2 while Engaged. May not Sprint. Cannont move and Shoot. Cannot Shoot at Engaged units. Cannot shoot over terrain features that block line of Sight. (Note: Dwarven Ballista is an indirect fire weapon.) (Note: Rune of Uruz gives no bonus to ranged attacks.)",,,,,,,,,,,,,,,,,,,,,
+"Longbeards","?(",5,")",6,"/",6,"?",1,"/",4,"N/A","14*","2.5""*",4,4,4,394,2,"Elite",4,788
+"Passes all Fear Checks. (This ability does not apply to Rout Checks.) MC 3.5"" when Routing of Final Rushing.",,,,,,,,,,,,,,,,,,,,,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,0,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"2283","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2300,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,17,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1

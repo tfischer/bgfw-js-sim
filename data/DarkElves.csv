@@ -1,0 +1,43 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,,
+"Dark Elves",,,,,,,,,,,,,,,,,,,,,,
+"Dark Elves Army Ability - Pain Touch - You may spend one command action to mark the Pain Touch box on one of your units. When that unit deals one or more damage in an attack, erase the box and your unit deals an additional damage. You can't use this ability on ranged attacks, or if you played a command card on the attack. Premeditation - During army creation, you may spend up to 60 points on Premeditation. After deployment but before writing orders, you may mark the Pain Touch box on one of your units for every 15 points you spent on Premeditation.",,,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",,
+"Slave Warriors","?(","6*",")","4*","/","4*","?",1,"/",1,"N/A",12,3.5,3,3,2,96,,"Core",7,0,7
+"?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. Can't be empowered with Pain Touch.",,,,,,,,,,,,,,4,2,4,242,,"Core",2,,
+"Lowblood Levy","?(","6*",")","4*","/","5*","?",2,"/",1,"N/A",12,3.5,3,3,2,132,,"Core",7,0,7
+"?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. ",,,,,,,,,,,,,,4,2,4,216,,"Core",0,,0
+"Halfblood Levy","?(","6*",")","5*","/","5*","?",2,"/",2,"N/A",12,"3.5""",4,3,3,214,,"Core",7,0,7
+"?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. ",,,,,,,,,,,,,,4,4,4,295,,"Core",0,,0
+"Halfblood Slavetakers","?(",4,")",5,"/","5*","?","2*","/",1,"N/A",12,"7""",3,2,2,181,,"Core",7,0,7
+"Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)",,,,,,,,,,,,,,3,2,3,158,,"Core",0,,0
+"Highblood Blades","?(",5,")",6,"/",5,"?",3,"/",1,"N/A",13,"3.5""",4,3,3,255,,"Core",7,0,7
+"Fearsome.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,2,4,142,,"Core",0,,0
+"Blade Dancers","?(","5*",")",6,"/",5,"?",3,"/",1,"N/A",13,"3.5”",4,3,3,284,,"N/A",4,0,4
+"Fearsome. ?(+1) +0/+0 for each Blade Dance box marked. At the beginning of each movement and command phase, mark a Blade Dance box if this unit is engaged. At the end of your movement and command phase, if it isn't engaged, erase a Blade Dance box.",,,,,,,,,,,,,,3,3,2,200,,"N/A",0,,0
+"Highblood Duskblades","?(",5,")",6,"/",6,"?",3,"/",1,"N/A",13,"3.5""",4,3,3,299,,"N/A",4,0,4
+"Fearsome.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",2,2,2,214,,"N/A",0,,0
+"Highblood Lashmistresses","?(",5,")",6,"/",5,"?",3,"/",1,"*",13,"3.5""",4,3,3,313,,"N/A",4,0,4
+"Fearsome. Siren Song (Spell, Attack) ?(5) 6/5 Range: 10.5"" Line of Sight. Cast at the end of your Movement and Command Phase. No penalty for Move and Shoot. Damage from this attack can't cause rout checks. The first time a non-routing unit takes damage from Siren Song in a phase, move itimmediately towards this unit as if it had a Clase order targeting it. This movement can cause a final rush.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",8,2,5,900,,"N/A",0,,0
+"Dusk Lances","?(",6,")",6,"/","6*","?","3*","/",2,"N/A",13,"5""",3,2,2,444,,"N/A",4,0,4
+"Cavalry. Fearsome. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)",,,,,,,,,,,,,,4,4,4,345,,"N/A",0,,0
+"Drake Riders","?(",5,")",6,"/","5*","?","2*","/",2,"N/A",13,"6""",3,2,1,303,,"N/A",4,0,4
+"Cavalry. Fearsome. Flying: 10.5"" Large. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)",,,,,,,,,,,,,,4,4,4,345,,"N/A",0,,0
+"Standard Bearers","?(",3,")",6,"/",6,"?",3,"/",1,"N/A",14,"3.5""",3,3,2,202,,"Elite",4,0,4
+"Fearsome.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",3,2,1,360,,"Elite",0,,0
+"Pureblood Coven","?(",3,")",6,"/",5,"?",2,"/",1,"*",13,"6""",2,2,2,308,,"Elite",4,0,4
+"Cavalry. Terrifying. Spells: Midnight's Chill, Evil Eye, Witching Hour.",,,,,,,,,,,,,,7,2,5,500,,"Elite",0,,0
+"Lords of Dusk","?(",4,")",6,"/",6,"?",3,"/",1,"21""*",13,"3.5""",3,2,2,429,,"Elite",4,0,4
+"Terrifying. Ranged Attack is a spell and is Line of Sight. No penalty for Move and Shoot. When a friendly unit with a center point within 2.5"" of any center point of this unit routs, rally it at the end of the turn. When that unit makes a rout move, it moves only 1.25"".","?(","6*",")",6,"/",7,"?",1,"/",3,"N/A","N/A","5”",5,4,5,600,,"Elite",0,,67
+"Premeditation","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",15,0,"N/A","N/A",0,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,0,"N/A","N/A",0,
+,,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"0","Minimum  Core Units:",,,4,
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2,
+"Underbudget by:",,,,,,,,,,,,,,,,,2000,"Decks Owned:",,,1,
+"Overbudget by:",,,,,,,,,,,,,,,,,0,,,,,
+"Coven Spells",,,,,,,,,,,,,,,,,,,,,,
+"Midnight's Chill (Attack, Curse) - ?(3) 6/6 Range:14"" The target gets -1 MC the next time it moves.",,,,,,,,,,,,,,,,,,,,,,
+"Evil Eye (Attack, Curse) - ?(3) 6/6 Range:14"" The target gets ?(-1) 0/0 the next time it attacks.",,,,,,,,,,,,,,,,,,,,,,
+"Witching Hour - Range: Battlefield. - The next time you make a spell attack on the cursed unit with a Dark Elf unit, that attack gets ?(+1) +1/+1. You can't play command cards on that attack. ",,,,,,,,,,,,,,,,,,,,,,
+"Note: The Curse effect of a coven spell takes efffect even if the attack deals no damage.",,,,,,,,,,,,,,,,,,,,,,
+"Errata: There was a misprint on the Lowblood Levy. Instead of ?(6) 5/5 as printed it should read ?(6) 4/5",,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,40 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"High Elves",,,,,,,,,,,,,,,,,,,,,
+"High Elf Army Ability - Precision - You may spend one Command Actions to empower one of your units with Precision. You may erase the mark during an attack, before that unit rolls to hit. If you do, that units does one extra hit. Erasing the mark counts as playing a command card. Sprint - You may spend a Command Action to Sprint one of your units. That unit's base MC becomes 5"" for the turn. Maneuver Mastery - High Elf units under Direct Control recieve no movement penalties for Maneuvering.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",
+"Cygnets","?(",5,")",5,"/",5,"?",2,"/",2,"N/A",12,"3.5”",4,2,3,177,,"Core",6,0
+,,,,,,,,,,,,,,4,2,3,177,,"Core",6,
+"High Elf Archers","?(",4,")","6*","/","5*","?",1,"/",2,"14”",13,"3.5”",3,2,2,225,,"Core",5,0
+"?(-0) -2/-2 and while Engaged.",,,,,,,,,,,,,,3,2,2,225,,"Core",5,
+"High Elf Battle Squad","?(",3,")",6,"/",5,"?",3,"/",2,"N/A",13,"3.5”",3,3,2,187,2,"Core",6,374
+,,,,,,,,,,,,,,3,3,2,187,,"Core",6,
+"Elder-Blade Battle Squad","?(",3,")",6,"/",6,"?",3,"/",2,"N/A",13,"3.5”",3,3,2,220,1,"Core",4,220
+,,,,,,,,,,,,,,3,3,2,220,,"Core",4,
+"High Elf Chariots","?(",4,")",6,"/","5*","?","2*","/",2,"N/A",13,"5”",3,2,2,252,1,"Core",7,252
+"Cavalry. Wheeled. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) If Unengaged Chariots become Engaged on the flank while on Close, they are considered Charging +1 Impact Hit (two total) when Charging with the front.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",3,2,2,252,,"Core",7,
+"High Elf Spearmen","?(","6*",")","6*","/","5*","?",3,"/",2,"N/A",13,"3.5”",4,3,3,334,,"Core",6,0
+"?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,4,3,3,334,,"Core",6,
+"High Elf Swordsmen","?(",5,")",6,"/",5,"?",3,"/",2,"N/A",13,"3.5”",4,3,3,299,,"Core",6,0
+,,,,,,,,,,,,,,4,3,3,299,,"Core",6,
+"Elder-Blade Swordsmen","?(",5,")",6,"/",6,"?",3,"/",2,"N/A",13,"3.5”",4,3,3,352,1,"Core",4,352
+,,,,,,,,,,,,,,4,3,3,352,,"Core",4,
+"High Elf Bowriders","?(","4*",")",6,"/",5,"?","2*","/",1,"14”",13,"6”",2,2,2,292,1,"N/A",4,292
+"Cavalry. ?(+1) +0/+0 when Engaged. ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",2,2,2,292,,"N/A",4,
+"High Elf Rangers","?(",5,")",6,"/",5,"?","3*","/",1,"N/A",13,"5”",4,2,2,261,,"N/A",4,0
+"?+1/+0 vs. range.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,2,2,261,,"N/A",4,
+"Elder-Blade Rangers","?(",5,")",6,"/",6,"?","3*","/",1,"N/A",13,"5”",4,2,2,307,,"N/A",3,0
+"?+1/+0 vs. range.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",4,2,2,307,,"N/A",3,
+"Celestial Guard","?(",5,")",7,"/",6,"?",4,"/",2,"N/A",14,"3.5”",4,3,3,506,1,"Elite",3,506
+,,,,,,,,,,,,,,4,3,3,506,,"Elite",3,
+"High Elf Battlemages","?(","5*",")","5*","/","5*","?",2,"/",1,"14”",13,"3.5”",2,2,2,239,,"Elite",4,0
+"?(-2) -2/-2 and while Engaged. During your turn, if this unit is Unengaged, you may draw a Command Card at the start of the Combat Phase. If you do, this unit does not make a range attack this turn.",,,,,,,,,,,,,,2,2,2,239,,"Elite",4,
+"High Elf Knights","?(",6,")",6,"/","5*","?","3*","/",2,"N/A",13,"5”",3,2,2,378,,"Elite",3,0
+"Cavalry. ?(+0) +0/+2 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",3,2,2,378,,"Elite",3,
+"High Elf Scorpions","?(","4*",")","6*","/","6*","?",1,"/",2,"17.5”",13,"2.5”",2,2,2,260,,"Elite",3,0
+"Wheeled. ?(-1) -2/-3 while Engaged. May not Sprint. Cannot move and Shoot. Cannot Shoot at Engaged units. Cannot Shoot over terrain features that block Line of Sight.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",2,2,2,260,,"Elite",3,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"1996","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,4,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1

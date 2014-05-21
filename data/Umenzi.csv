@@ -1,0 +1,41 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Umenzi Tribesmen",,,,,,,,,,,,,,,,,,,,,
+"Umenzi Army Ability - Faith Armor - You may spend one Command Actions to empower one of your units with Faith Armor. That next point of damage to that unit is prevented. The Mark is erased when the damage is prevented.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",
+"Initiates","?(",5,")",4,"/",5,"?",2,"/",1,"N/A","9*","3.5""",3,4,3,104,,"Core",0,0
+"Courage +2 while within the Leadership.",,,,,,,,,,,,,,3,4,3,104,,"Core",6,
+"Umenzi Atlatlmen","?(",4,")","5*","/","5*","?",1,"/",1,"7""","10*","3.5""",3,4,2,115,,"Core",0,0
+"Courage +2 while within the Leadership Range of any of your non-routing units. ?(-0) -1/-1 and while Engaged.",,,,,,,,,,,,,,3,4,2,115,,"Core",7,
+"Umenzi Javelineers","?(",5,")",5,"/",5,"?",2,"/",1,"3.5""","10*","3.5""",4,4,2,184,,"Core",0,0
+"Courage +2 while within the Leadership Range of any of your non-routing units. Range attack uses the Javelin rule.","?(",5,")",5,"/",5,"?",2,"/",1,"3.5""","10*","3.5""",4,4,2,184,,"Core",7,
+"Umenzi Spearmen","?(","6*",")","5*","/","5*","?",2,"/",1,"N/A","10*","3.5""",4,4,2,170,,"Core",0,0
+"Courage +2 while within the Leadership Range of any of your non-routing units. ?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units.",,,,,,,,,,,,,,4,4,2,170,,"Core",5,
+"Umenzi Warriors","?(",5,")",5,"/",5,"?",2,"/",1,"N/A","10*","3.5""",4,4,2,153,,"Core",0,0
+"Courage +2 while within the Leadership.",,,,,,,,,,,,,,4,4,2,153,,"Core",6,
+"Berserkers","?(",6,")",5,"/",6,"?",1,"/",2,"N/A","N/A","3.5""",4,4,2,226,,"N/A",0,0
+"Always has the ""Close"" Standing Order and may not be given a Standing Order Modifier or be directly controlled. Passes all Courage Checks.","?(",5,")",4,"/",4,"?",0,"/",1,"N/A","N/A","5""",4,4,2,226,,"N/A",7,
+"Shamans","?(",3,")",4,"/",3,"?",1,"/",1,"N/A",13,"3.5""",3,3,2,100,,"N/A",0,0
+"Leadership Range: 6"" (Measured from this unit's front center point to any center point on the other unit. 360°: line of sight not necessary.) Spells: Hex, Bless, and Heal.","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",14,"3.5""",3,3,2,100,,"N/A",5,
+"Worthy","?(",5,")",5,"/",6,"?",2,"/",2,"N/A",13,"3.5""",5,3,3,256,,"N/A",0,0
+"Leadership Range: 3.5"" (Measured from this unit's front center point to any center point on the other unit. 360°: line of sight not necessary.)","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",14,"3.5""",5,3,3,256,,"N/A",5,
+"The Possessed","?(",4,")",4,"/",4,"?",1,"/",1,"N/A","9*","3.5""",3,3,3,77,,"N/A",0,0
+"Courage +6 while within the Leadership Range of any of your non-routing units. Cannot be Healed, Blessed, or empowered with Faith Armor. You may not play Command Cards while The Possessed is attacking or defending. Destroyed if Routed.",,,,,,,,,,,,,,3,3,3,77,,"N/A",6,
+"Chosen","?(",5,")",6,"/",6,"?",3,"/",2,"N/A",14,"3.5""",5,3,3,381,,"Elite",0,0
+"Leadership Range: 5"" (Measured from this unit's front center point to any center point on the other unit. 360°: line of sight not necessary.)","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",14,"3.5""",5,3,3,381,,"Elite",4,
+"High Priests","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",14,"3.5""",3,3,3,130,,"Elite",0,0
+"Leadership Range: 7"" (Measured from this unit's front center point to any center point on the other unit. 360°: line of sight not necessary.) Spells: Hex, Bless, Heal, and Death Curse.","?(",3,")",4,"/",3,"?",1,"/",2,"N/A",14,"3.5""",3,3,3,130,,"Elite",4,
+"Giant War Elephant","?(","4*",")",5,"/","7*","?","1*","/",4,"N/A",12,"5""",7,4,5,523,,"Elite",0,0
+"Thrown Spears","?(",3,")",5,"/",5,,,,,3.5,,,,,,,,,,0
+"Colossal. Terrifying. Cannot be Healed, Blessed, or empowered with Faith Armor. Giant War Elephant has two sets of attacks that are rolled independently; the elephant itself (main stat line) and thrown spears (lower line). During any turn, all Giant War Elephant attacks must be rolled against a single enemy unit. Elephant Attacks: ?(+0) +0/+1, ? +1/+0, and causes two extra hits while Charging. (Simply add two dice when rolling to damage.) (These are in addition tot he normal Charging bonus.) Spear Attacks: This is a ranged attack even when Engaged. (Does not recieve Engaged combat modifiers and gets no Free Attacks vs. Routing Units and no attacks on opponents turn.) No penalty for Move and Shoot.","?(","4*",")",5,"/","7*","?","1*","/",4,"N/A",12,"5""",7,4,5,523,,"Elite",3,
+"Command Card","N/A",3,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,0,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"0","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,2000,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1
+"Umenzi Spells",,,,,,,,,,,,,,,,,,,,,
+"Hex - Range: Battlefield - A unit of your choice gets ?(-1)-0/-0 during its next attack. (A unit may not have more than one Hex and one Blessing at a time.)",,,,,,,,,,,,,,,,,,,,,
+"Bless - Range: Battlefield - A unit of your choice gets ?(+1)+0/+0 during its next attack. (A unit may not have more than one Hex and one Blessing at a time.)",,,,,,,,,,,,,,,,,,,,,
+"Heal - Range: Leadership Range. - Remove one damage from a friendly unit. Do one damage to the caster unless it is healing itself. A unit cannot be healed if it is empowered with Faith Armor or has already been healed this turn.",,,,,,,,,,,,,,,,,,,,,
+"Death Curse - Range: 3.5"" - Do one damage to a unit and ondamage to the caster. This spell must bbe declared at the beginning of the Combat Phase before any attacks are made.",,,,,,,,,,,,,,,,,,,,,
+"Errata: The Umenzi Javelineers and Berserkers have been updated above per errata.",,,,,,,,,,,,,,,,,,,,,

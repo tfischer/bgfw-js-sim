@@ -1,0 +1,35 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Lizardmen",,,,,,,,,,,,,,,,,,,,,
+"Lizardmen Army Ability - Fury - You may spend one Command Actions to empower one of your units with Fury. That unit gets Courage +1 while it has the mark. If your unit does two or more damage during an attack while engaged, you may erase the mark to do one additional damage. Erasing the mark counts as playing a Command Card.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",
+"Swarmling Warriors","?(","5*",")",5,"/",4,"?",2,"/",1,"N/A","11*","5”",4,3,3,141,,"Core",7,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",4,3,3,141,,"Core",7,
+"Trog Spearmen","?(","6*",")","5*","/","5*","?",2,"/",2,"N/A","12*","3.5""",4,4,3,243,2,"Core",6,486
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,4,4,3,243,,"Core",6,
+"Trog Warriors","?(","5*",")",5,"/",5,"?",2,"/",2,"N/A","12*","3.5""",4,4,3,218,,"Core",7,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",4,4,3,218,,"Core",7,
+"Tyrant Spearmen","?(","6*",")","5*","/","6*","?",2,"/",3,"N/A","12*","3.5""",5,4,3,375,,"Core",5,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,5,4,3,375,,"Core",5,
+"Tyrant Warriors","?(","5*",")",5,"/",6,"?",2,"/",3,"N/A","12*","3.5”",5,4,3,338,2,"Core",6,676
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",5,4,3,338,,"Core",6,
+"Ancients","?(","5*",")",5,"/",7,"?",1,"/",4,"N/A","12*","5”",6,0,6,409,,"N/A",4,0
+"Large. Fearsome. Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",6,0,6,409,,"N/A",4,
+"Hatchlings","?(","5*",")",5,"/",3,"?",1,"/",1,"N/A","11*","5”",3,3,3,91,,"N/A",7,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",3,3,3,91,,"N/A",7,
+"Raptor Pack","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",4,4,3,290,,"N/A",4,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.","?(","5*",")",6,"/",5,"?",2,"/",2,"N/A","11*","6”",4,4,3,290,,"N/A",4,
+"Swarmling Bowmen","?(","4*",")","5*","/","4*","?",1,"/",1,"10.5”","11*","5”",3,2,2,112,,"N/A",6,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green. ?(-0) -2/-2 and while Engaged.",,,,,,,,,,,,,,3,2,2,112,,"N/A",6,
+"Trog Bowmen","?(","4*",")","5*","/","5*","?",1,"/",2,"14”","12*","3.5""",3,3,2,176,,"N/A",5,0
+"Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green. ?(-0) -2/-2 and while Engaged.",,,,,,,,,,,,,,3,3,2,176,,"N/A",5,
+"Triceratops Herd","?(",4,")",5,"/",6,"?",1,"/",4,"N/A",12,"3.5”*",5,4,4,322,1,"Elite",4,322
+"Large and Fearsome. Three Impact Hits. May not be directly controlled. May not be given a Standing Order Modifier or ""fury"". To play command cards on Triceratops Herd you must first discard one other command card. MC 5"" when Routing or Final Rushing.","?(",4,")",5,"/",6,"?",1,"/",4,"N/A",12,"3.5”*",5,4,4,322,,"Elite",4,
+"Tyrannosaurus Rex","?(",5,")",6,"/",8,"?",2,"/",4,"N/A",12,"5”",8,2,5,507,1,"Elite",3,507
+"Colossal. Terrifying. Always has the ""Close"" Standing Order and may not be given a Standing Order Modifier or be directly controlled. May not be given ""Fury."" To play Command Cards on Tyrannosaurus Rex you must first discard two other Command Cards. Tyrannosaurus Rex requires two Command Actions to Rally. ","?(",5,")",6,"/",8,"?",2,"/",4,"N/A",12,"5”",8,2,5,507,,"Elite",3,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,0,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"1991","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,9,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1
+"Errata: The Tyrannosaurus Rex cannot be directly controlled.",,,,,,,,,,,,,,,,,,,,,

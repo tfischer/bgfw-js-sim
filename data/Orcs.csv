@@ -1,0 +1,34 @@
+"Battleground: Fantasy Warfare",,,,,,,,,,,,,,,,,,,,,
+"Orc Army",,,,,,,,,,,,,,,,,,,,,
+"Orc Army Ability - Lash - You may spend a Command Action to Lash one of your units. A Lashed unit gets +1 MC and ?(+1) +0/+0 for the turn. You may only Lash each unit once per turn.",,,,,,,,,,,,,,,,,,,,,
+"Unit Name","Attack",,,,,,"Defense",,,,"Range","Courage","Move","Damage Bar",,,"Points Cost","# Selected","Type","# Available",
+"Goblin Bowmen","?(",4,")","5*","/","5*","?",0,"/",1,"14""",11,"3.5""",3,2,2,146,,"Core",8,0
+"?(-0) -2/-2 and while Engaged.",,,,,,,,,,,,,,3,2,2,146,,"Core",8,
+"Goblin Raiders","?(",5,")",5,"/",5,"?",1,"/",2,"N/A",11,3.5,4,2,3,143,,"Core",4,0
+,,,,,,,,,,,,,,4,2,3,143,,"Core",4,
+"Goblin Spearmen","?(","6*",")","5*","/","5*","?",1,"/",2,"N/A",11,"3.5""",4,2,3,160,,"Core",7,0
+"?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,4,2,3,160,,"Core",7,
+"Orc Spearmen","?(","6*",")","5*","/","5*","?",2,"/",3,"N/A",12,"3.5""",4,4,2,264,,"Core",6,0
+"?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ",,,,,,,,,,,,,,4,4,2,264,,"Core",6,
+"Orc Swordsmen","?(",5,")",5,"/",5,"?",2,"/",3,"N/A",12,"3.5""",4,4,2,237,4,"Core",6,948
+,,,,,,,,,,,,,,4,4,2,237,,"Core",6,
+"Crazed Goblins","?(",5,")",4,"/",4,"?",0,"/",1,"N/A","N/A","5""",3,3,2,83,,"N/A",6,0
+"Always has the ""Close"" Standing Order and may not be given a Standing Order Modifier or be directly controlled. Passes all Courage Checks. Is unaffected by your Command Cards and may not be Lashed. You may not play Command Cards while Crazed Goblins is attacking or defending.","?(",5,")",4,"/",4,"?",0,"/",1,"N/A","N/A","5""",3,3,2,83,,"N/A",6,
+"Goblin Wolf Riders","?(","6*",")",5,"/","5*","?","1*","/",2,"N/A",11,"7""",2,2,1,185,,"N/A",5,0
+"Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) ?(+2) +0/+0 vs. Routing units.","?(",6,")",6,"/","6*","?","2*","/",3,"N/A",13,"5""",2,2,1,185,,"N/A",5,
+"Orc Axemen","?(",5,")",6,"/",6,"?",1,"/",3,"N/A",13,"3.5""",5,3,2,300,1,"N/A",4,300
+,,,,,,,,,,,,,,5,3,2,300,,"N/A",4,
+"Orc Crossbowmen","?(","3*",")",5,"/","5*","?",1,"/",3,"14""",12,"3.5""",4,4,2,267,,"N/A",6,0
+"?(+2) +0/+1 and while Engaged. Range attack is Line of Sight.",,,,,,,,,,,,,,4,4,2,267,,"N/A",6,
+"Orc Marauders","?(",7,")",6,"/",5,"?",2,"/",3,"N/A",13,"3.5""",5,3,2,367,2,,4,734
+,,,,,,,,,,,,,,5,3,2,367,,"N/A",4,
+"Goblin Bomb-Chucker","?(","*",")","5*","/","6*","?",1,"/",2,"21""",11,"2.5""",3,2,2,300,,"Elite",4,0
+"While engaged, Goblin Bomb-Chucker is ?(3) 4/4. Cannot move and shoot. As part of its roll to hit, first roll two dice. (This roll may not be changed.) If you roll doubles. Goblin Bomb-Chucker recieves one damage and has no Attack Dice. Otherwise, the result is its number of Attack Dice. You cannot play Command Cards while Goblin Bomb-Chucker is attacking. ","?(","*",")","5*","/","6*","?",1,"/",2,"21""",11,"2.5""",3,2,2,300,,"Elite",4,
+"Trolls","?(",5,")",5,"/",7,"?",1,"/",3,"N/A",13,"5""",7,0,7,406,,"Elite",4,0
+"Large. Fearsome. At the start of your Movement and Command Phase, Trolls heal one damage. Once Trolls are in the red, only red damage may be healed.","?(",5,")",5,"/",7,"?",1,"/",3,"N/A",13,"5""",7,0,7,406,,"Elite",4,
+"Command Card","N/A",,,,,,"N/A",,,,"N/A","N/A","N/A","N/A","N/A","N/A",25,0,"N/A","N/A",0
+,,,,,,,,,,,,,,,,,,,,,
+"Add Mercenaries from:","None",,,,,,,,,,,"Selected Units Points Total:",,,,,"1982","Minimum  Core Units:",,,4
+"Enter Desired Point Limit:",,,,,,,,,,,,,,,,,2000,"Max of Each Elite Unit:",,,2
+"Underbudget by:",,,,,,,,,,,,,,,,,18,"Basic Decks Owned:",,,1
+"Overbudget by:",,,,,,,,,,,,,,,,,0,"Reinforcement Decks Owned:",,,1

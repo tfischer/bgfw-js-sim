@@ -532,10 +532,19 @@ var createSim = function(params) {
         };
         if (round == 0) {
             if (baseMods.u1.order == "close") {
-                netMods.u1.attack.dice += 2;
+                if (unit1.attack.dice >=4) {
+                    netMods.u1.attack.dice += 2;
+                } else {
+                    netMods.u1.attack.dice += 1;
+                }
             }
             if (baseMods.u2.order == "close") {
-                netMods.u2.attack.dice += 2;
+                if (unit2.attack.dice >=4) {
+                    netMods.u2.attack.dice += 2;
+                } else {
+                    netMods.u2.attack.dice += 1;
+                }
+                
             }
         }
         return netMods;

@@ -28,7 +28,7 @@ var armyData = {
           "type": "Core",
           "special": {
             "attackMods": [{
-              "tags": ["ranged"],
+              "tags": ["ranged", "LOS"],
               "dice": 0,
               "skill": 2,
               "power": 2
@@ -38,7 +38,6 @@ var armyData = {
               "skill": 2,
               "power": 0
             }],
-            "rangedAttackType": "LOS",
             "tags": ["skirmisher"]
           },
           "specialText": "Skirmisher. D+2/+0 vs. ranged attacks. A(-0) -2/-2 when engaged. Ranged attack is Line of Sight."
@@ -377,7 +376,7 @@ var armyData = {
           "special": {
             "tags": ["skirmisher"],
             "attackMods": [{
-              "tags": ["ranged"],
+              "tags": ["ranged", "LOS"],
               "dice": 0,
               "skill": 2,
               "power": 2
@@ -387,7 +386,6 @@ var armyData = {
               "skill": 2,
               "power": 0
             }],
-            "rangedAttackType": "LOS"
           },
           "specialText": "Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged. Ranged attack is Line of Sight. May not be empowered with Determination.?(6*)6/7?1/3N/AN/A5”545600Elite3\r"
         }
@@ -949,8 +947,8 @@ var armyData = {
           "name": "Dwarven Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 0,
@@ -968,6 +966,14 @@ var armyData = {
           },
           "points": 158,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged. MC 3.5 when Routing of Final Rushing. (Note: Rune of Uruz gives no bonus to ranged attacks.)\r"
         },
         {
@@ -1018,17 +1024,20 @@ var armyData = {
           },
           "points": 269,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. MC 3.5 when Routing of Final Rushing.\r"
         },
         {
           "name": "Dwarven Crossbowmen",
           "attack": {
-            "dice": 3,
+            "dice": 5,
             "skill": 5,
             "power": 5
           },
           "defend": {
-            "skill": 1,
+            "skill": 2,
             "power": 3
           },
           "ranged": {
@@ -1043,6 +1052,19 @@ var armyData = {
           },
           "points": 255,
           "type": "N/A",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged", "LOS"],
+              "dice": -2,
+              "skill": 0,
+              "power": 0
+            }],
+            "defendMods": [{
+              "tags": ["ranged"],
+              "skill": -1,
+              "power": 0
+            }]
+          },
           "specialText": "?(+2) +0/+0 and ?+1/+0 while Engaged. Range attack is Line of Sight. MC 3.5 when Routing of Final Rushing. (Note: Rune of Uruz gives no bonus to ranged attacks.)N/A\r"
         },
         {
@@ -1143,14 +1165,28 @@ var armyData = {
           },
           "points": 280,
           "type": "Elite",
+          "special": {
+            "tags": ["cavalry", "noEmpower"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging bonus.) May not Sprint. May not be empowered with Rune of Uruz.\r"
         },
         {
           "name": "Dwarven Ballista",
           "attack": {
-            "dice": 4,
-            "skill": 5,
-            "power": 7
+            "dice": 3,
+            "skill": 4,
+            "power": 5
           },
           "defend": {
             "skill": 1,
@@ -1168,6 +1204,15 @@ var armyData = {
           },
           "points": 294,
           "type": "Elite",
+          "special": {
+            "tags": ["noSprint", "noMoveShoot", "noShootAtEngaged", "noShootOverTerrain"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 1,
+              "skill": 1,
+              "power": 2
+            }]
+          },
           "specialText": "?(-1) -1/-2 while Engaged. May not Sprint. Cannont move and Shoot. Cannot Shoot at Engaged units. Cannot shoot over terrain features that block line of Sight. (Note: Dwarven Ballista is an indirect fire weapon.) (Note: Rune of Uruz gives no bonus to ranged attacks.)\r"
         },
         {
@@ -1193,6 +1238,9 @@ var armyData = {
           },
           "points": 394,
           "type": "Elite",
+          "special": {
+            "tags": ["noFear"]
+          },
           "specialText": "Passes all Fear Checks. (This ability does not apply to Rout Checks.) MC 3.5 when Routing of Final Rushing.\r"
         }
       ]
@@ -1204,8 +1252,8 @@ var armyData = {
           "name": "Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -1223,6 +1271,14 @@ var armyData = {
           },
           "points": 165,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.332165Core#VALUE!\r"
         },
         {
@@ -1298,6 +1354,9 @@ var armyData = {
           },
           "points": 220,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 523220Core#VALUE!\r"
         },
         {
@@ -1398,6 +1457,20 @@ var armyData = {
           },
           "points": 245,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135321245N/A#VALUE!\r"
         },
         {
@@ -1423,6 +1496,38 @@ var armyData = {
           },
           "points": 193,
           "type": "N/A",
+          "special": {
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": -2,
+              "skill": 0,
+              "power": 0
+            },
+            {
+              "tags": ["holdVsCharge", "vsLarge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["holdVsCharge", "vsCavalry"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["vsLarge"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            },
+            {
+              "tags": ["vsCavalry"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?(-2) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. ?+1/+0 vs. Cavalry and/or Large units.523193N/A#VALUE!\r"
         },
         {
@@ -1448,6 +1553,14 @@ var armyData = {
           },
           "points": 146,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135222146N/A#VALUE!\r"
         },
         {
@@ -1473,14 +1586,28 @@ var armyData = {
           },
           "points": 413,
           "type": "Elite",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135322413Elite#VALUE!\r"
         },
         {
           "name": "Longbowmen",
           "attack": {
             "dice": 4,
-            "skill": 6,
-            "power": 6
+            "skill": 4,
+            "power": 4
           },
           "defend": {
             "skill": 1,
@@ -1498,6 +1625,14 @@ var armyData = {
           },
           "points": 358,
           "type": "Elite",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.332358Elite#VALUE!66\r"
         }
       ]
@@ -1534,15 +1669,15 @@ var armyData = {
           "name": "High Elf Archers",
           "attack": {
             "dice": 4,
-            "skill": 6,
-            "power": 5
+            "skill": 4,
+            "power": 3
           },
           "defend": {
             "skill": 1,
             "power": 2
           },
           "ranged": {
-            "range": "14”"
+            "range": "14"
           },
           "courage": 13,
           "move": 3.5,
@@ -1553,6 +1688,14 @@ var armyData = {
           },
           "points": 225,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.322225Core5\r"
         },
         {
@@ -1628,6 +1771,21 @@ var armyData = {
           },
           "points": 252,
           "type": "Core",
+          "special": {
+            "tags": ["cavalry", "wheeled", "chargeToFlank"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1,
+              "impactHits": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. Wheeled. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) If Unengaged Chariots become Engaged on the flank while on Close they are considered Charging +1 Impact Hit (two total) when Charging with the front.?(6)6/6*?2*/3N/A135322252Core7\r"
         },
         {
@@ -1653,6 +1811,9 @@ var armyData = {
           },
           "points": 334,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 433334Core6\r"
         },
         {
@@ -1708,7 +1869,7 @@ var armyData = {
         {
           "name": "High Elf Bowriders",
           "attack": {
-            "dice": 4,
+            "dice": 5,
             "skill": 6,
             "power": 5
           },
@@ -1717,7 +1878,7 @@ var armyData = {
             "power": 1
           },
           "ranged": {
-            "range": "14”"
+            "range": "14"
           },
           "courage": 13,
           "move": 6,
@@ -1728,6 +1889,20 @@ var armyData = {
           },
           "points": 292,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": -1,
+              "skill": 0,
+              "power": 0
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+1) +0/+0 when Engaged. ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135222292N/A4\r"
         },
         {
@@ -1753,6 +1928,13 @@ var armyData = {
           },
           "points": 261,
           "type": "N/A",
+          "special": {
+            "defendMods": [{
+              "tags": ["vsRanged"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?+1/+0 vs. range.?(6)6/6*?2*/3N/A135422261N/A4\r"
         },
         {
@@ -1778,6 +1960,13 @@ var armyData = {
           },
           "points": 307,
           "type": "N/A",
+          "special": {
+            "defendMods": [{
+              "tags": ["vsRanged"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?+1/+0 vs. range.?(6)6/6*?2*/3N/A135422307N/A3\r"
         },
         {
@@ -1808,9 +1997,9 @@ var armyData = {
         {
           "name": "High Elf Battlemages",
           "attack": {
-            "dice": 5,
-            "skill": 5,
-            "power": 5
+            "dice": 3,
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 2,
@@ -1828,6 +2017,15 @@ var armyData = {
           },
           "points": 239,
           "type": "Elite",
+          "special": {
+            "tags": ["commandCardIfUnengaged"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 2,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-2) -2/-2 and while Engaged. During your turn if this unit is Unengaged you may draw a Command Card at the start of the Combat Phase. If you do this unit does not make a range attack this turn.222239Elite4\r"
         },
         {
@@ -1853,21 +2051,35 @@ var armyData = {
           },
           "points": 378,
           "type": "Elite",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+2 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135322378Elite3\r"
         },
         {
           "name": "High Elf Scorpions",
           "attack": {
-            "dice": 4,
-            "skill": 6,
-            "power": 6
+            "dice": 3,
+            "skill": 4,
+            "power": 3
           },
           "defend": {
             "skill": 1,
             "power": 2
           },
           "ranged": {
-            "range": "17.5”"
+            "range": "17.5"
           },
           "courage": 13,
           "move": 2.5,
@@ -1878,6 +2090,15 @@ var armyData = {
           },
           "points": 260,
           "type": "Elite",
+          "special": {
+            "tags": ["wheeled", "noSprint", "noMoveShoot", "noShootAtEngaged", "noShootOverTerrain"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 1,
+              "skill": 2,
+              "power": 3
+            }]
+          },
           "specialText": "Wheeled. ?(-1) -2/-3 while Engaged. May not Sprint. Cannot move and Shoot. Cannot Shoot at Engaged units. Cannot Shoot over terrain features that block Line of Sight.?(6)6/6*?2*/3N/A135222260Elite3\r"
         }
       ]
@@ -1908,6 +2129,9 @@ var armyData = {
           },
           "points": 141,
           "type": "Core",
+          "special": {
+            "tags": ["bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”433141Core7\r"
         },
         {
@@ -1933,6 +2157,9 @@ var armyData = {
           },
           "points": 243,
           "type": "Core",
+          "special": {
+            "tags": ["spear", "bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 443243Core6\r"
         },
         {
@@ -1958,6 +2185,9 @@ var armyData = {
           },
           "points": 218,
           "type": "Core",
+          "special": {
+            "tags": ["bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”443218Core7\r"
         },
         {
@@ -1983,6 +2213,9 @@ var armyData = {
           },
           "points": 375,
           "type": "Core",
+          "special": {
+            "tags": ["bloodFrenzy", "spear"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 543375Core5\r"
         },
         {
@@ -2008,6 +2241,9 @@ var armyData = {
           },
           "points": 338,
           "type": "Core",
+          "special": {
+            "tags": ["bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”543338Core6\r"
         },
         {
@@ -2033,6 +2269,9 @@ var armyData = {
           },
           "points": 409,
           "type": "N/A",
+          "special": {
+            "tags": ["bloodFrenzy", "large", "fearsome"]
+          },
           "specialText": "Large. Fearsome. Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”606409N/A4\r"
         },
         {
@@ -2058,6 +2297,9 @@ var armyData = {
           },
           "points": 91,
           "type": "N/A",
+          "special": {
+            "tags": ["bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”33391N/A7\r"
         },
         {
@@ -2083,14 +2325,17 @@ var armyData = {
           },
           "points": 290,
           "type": "N/A",
+          "special": {
+            "tags": ["bloodFrenzy"]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green.?(5*)6/5?2/2N/A11*6”443290N/A4\r"
         },
         {
           "name": "Swarmling Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 4
+            "skill": 3,
+            "power": 2
           },
           "defend": {
             "skill": 1,
@@ -2108,14 +2353,23 @@ var armyData = {
           },
           "points": 112,
           "type": "N/A",
+          "special": {
+            "tags": ["bloodFrenzy"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green. ?(-0) -2/-2 and while Engaged.322112N/A6\r"
         },
         {
           "name": "Trog Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -2133,6 +2387,15 @@ var armyData = {
           },
           "points": 176,
           "type": "N/A",
+          "special": {
+            "tags": ["bloodFrenzy"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "Blood Frenzy: ?(+1) +0/+0 and Courage +2 while Engaged with a unit not in the green. ?(-0) -2/-2 and while Engaged.332176N/A5\r"
         },
         {
@@ -2158,6 +2421,16 @@ var armyData = {
           },
           "points": 322,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome", "noDirectControl", "noStandingOrderModifier", "noFury"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 0,
+              "impactHits": 3
+            }]
+          },
           "specialText": "Large and Fearsome. Three Impact Hits. May not be directly controlled. May not be given a Standing Order Modifier or fury. To play command cards on Triceratops Herd you must first discard one other command card. MC 5 when Routing or Final Rushing.?(4)5/6?1/4N/A123.5”*544322Elite4\r"
         },
         {
@@ -2183,6 +2456,9 @@ var armyData = {
           },
           "points": 507,
           "type": "Elite",
+          "special": {
+            "tags": ["colossal", "terrifying", "noDirectControl", "noStandingOrderModifier", "noFury"],
+          },
           "specialText": "Colossal. Terrifying. Always has the Close Standing Order and may not be given a Standing Order Modifier or be directly controlled. May not be given Fury. To play Command Cards on Tyrannosaurus Rex you must first discard two other Command Cards. Tyrannosaurus Rex requires two Command Actions to Rally. ?(5)6/8?2/4N/A125”825507Elite3\r"
         }
       ]
@@ -2213,6 +2489,9 @@ var armyData = {
           },
           "points": 242,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 424242Core6\r"
         },
         {
@@ -2263,14 +2542,17 @@ var armyData = {
           },
           "points": 295,
           "type": "Core",
+          "special": {
+            "tags": ["large", "fearsome", "stupid"],
+          },
           "specialText": "Large. Fearsome. Stupid. (Changing Standing Orders taking Direct Control or Rallying this unit costs two Command Actions rather than one.)?(5)5/6?2/3N/A125”444295Core7\r"
         },
         {
           "name": "Wildmen Archers",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -2288,6 +2570,14 @@ var armyData = {
           },
           "points": 158,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.323158Core5\r"
         },
         {
@@ -2363,6 +2653,14 @@ var armyData = {
           },
           "points": 214,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "noMoveShootPenalty"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) No penalty for Move and Shoot.?(6)6/6*?2*/3N/A135222214N/A5\r"
         },
         {
@@ -2388,6 +2686,9 @@ var armyData = {
           },
           "points": 900,
           "type": "Elite",
+          "special": {
+            "tags": ["colossal", "terrifying", "flying"],
+          },
           "specialText": "Large. Fearsome. Flying: MC 10.5 Red Dragon may breathe fire twice during a battle. Mark off a fire icon to give Red Dragon Range 7 (Line of Sight) this turn. To play a Command Card on Ancient Red Dragon you must first discard two other Command Cards.?(5)6/7?2/4*135”*825900Elite2\r"
         },
         {
@@ -2413,6 +2714,9 @@ var armyData = {
           },
           "points": 345,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome"]
+          },
           "specialText": "Large. Fearsome. Always has the Close Standing Order and may not be given a Standing Order Modifier or be Directly Controlled. To play a Command Card on Earth Elemental you must first discard two other Command Cards.?(5)5/6?2/3N/A125”444345Elite3\r"
         },
         {
@@ -2463,6 +2767,9 @@ var armyData = {
           },
           "points": 500,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome", "stupid"]
+          },
           "specialText": "Large. Fearsome. Stupid. (Changing Standing Orders taking Direct Control or Rallying this unit costs two Command Actions rather than one.) You may spend two Command Actions to have Hill Giant gain Range 21 this turn. To play a Command Card on Hill Giant you must first discard two other Command Cards.?(5)5/6?2/3N/A125”725500Elite4\r"
         },
         {
@@ -2488,6 +2795,15 @@ var armyData = {
           },
           "points": 600,
           "type": "Elite",
+          "special": {
+            "tags": ["colossal", "terrifying"],
+            "attackMods": [{
+              "tags": ["ifRegenPermanent"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "Colossal. Terrifying. Passes all Courage Checks. Always has the Close Standing Order and may not be given a Standing Order Modifier or be Directly Controlled. At the start of your Movement and Command Phase. Hydra heals one damage. Each time Hydra heals in this way it gains ?(+1) +0/+0 permanently. To Play a Command Card on Hydra you must first discard two other command cards.?(6*)6/7?1/3N/AN/A5”545600Elite3\r"
         },
         {
@@ -2513,6 +2829,9 @@ var armyData = {
           },
           "points": 691,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome", "flying"]
+          },
           "specialText": "Large. Fearsome. Flying: MC 10.5 Red Dragon may breathe fire twice during a battle. Mark off a fire icon to give Red Dragon Range 7 (Line of Sight) this turn. To play a Command Card on Red Dragon you must first discard two other Command Cards.?(5)6/7?2/4*135”*624691Elite3\r"
         }
       ]
@@ -2524,8 +2843,8 @@ var armyData = {
           "name": "Goblin Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 0,
@@ -2543,6 +2862,14 @@ var armyData = {
           },
           "points": 146,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.322146Core8\r"
         },
         {
@@ -2593,6 +2920,9 @@ var armyData = {
           },
           "points": 160,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 423160Core7\r"
         },
         {
@@ -2618,6 +2948,9 @@ var armyData = {
           },
           "points": 264,
           "type": "Core",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 442264Core6\r"
         },
         {
@@ -2668,6 +3001,9 @@ var armyData = {
           },
           "points": 83,
           "type": "N/A",
+          "special": {
+            "tags": ["noLash"]
+          },
           "specialText": "Always has the Close Standing Order and may not be given a Standing Order Modifier or be directly controlled. Passes all Courage Checks. Is unaffected by your Command Cards and may not be Lashed. You may not play Command Cards while Crazed Goblins is attacking or defending.?(5)4/4?0/1N/AN/A533283N/A6\r"
         },
         {
@@ -2693,6 +3029,25 @@ var armyData = {
           },
           "points": 185,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }, {
+              "tags": ["vsRouting"],
+              "dice": 2,
+              "skill": 0,
+              "power": 0
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) ?(+2) +0/+0 vs. Routing units.?(6)6/6*?2*/3N/A135221185N/A5\r"
         },
         {
@@ -2723,9 +3078,9 @@ var armyData = {
         {
           "name": "Orc Crossbowmen",
           "attack": {
-            "dice": 3,
+            "dice": 5,
             "skill": 5,
-            "power": 5
+            "power": 6
           },
           "defend": {
             "skill": 1,
@@ -2743,6 +3098,14 @@ var armyData = {
           },
           "points": 267,
           "type": "N/A",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged", "LOS"],
+              "dice": -2,
+              "skill": 0,
+              "power": -1
+            }]
+          },
           "specialText": "?(+2) +0/+1 and while Engaged. Range attack is Line of Sight.442267N/A6\r"
         },
         {
@@ -2773,9 +3136,9 @@ var armyData = {
         {
           "name": "Goblin Bomb-Chucker",
           "attack": {
-            "dice": null,
-            "skill": 5,
-            "power": 6
+            "dice": 3,
+            "skill": 4,
+            "power": 4
           },
           "defend": {
             "skill": 1,
@@ -2793,6 +3156,20 @@ var armyData = {
           },
           "points": 300,
           "type": "Elite",
+          "special": {
+            "tags": ["noMoveShoot"],
+            "attackMods": [{
+              "tags": ["ranged", "bombAttack"],
+              "dice": -3,
+              "skill": 1,
+              "power": 2
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "While engaged Goblin Bomb-Chucker is ?(3) 4/4. Cannot move and shoot. As part of its roll to hit first roll two dice. (This roll may not be changed.) If you roll doubles. Goblin Bomb-Chucker recieves one damage and has no Attack Dice. Otherwise the result is its number of Attack Dice. You cannot play Command Cards while Goblin Bomb-Chucker is attacking. ?(*)5*/6*?1/221112.5322300Elite4\r"
         },
         {
@@ -2818,6 +3195,9 @@ var armyData = {
           },
           "points": 406,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome", "trollRegenerate"]
+          },
           "specialText": "Large. Fearsome. At the start of your Movement and Command Phase Trolls heal one damage. Once Trolls are in the red only red damage may be healed.?(5)5/7?1/3N/A135707406Elite4\r"
         }
       ]
@@ -2854,8 +3234,8 @@ var armyData = {
           "name": "Ravenwood Archers",
           "attack": {
             "dice": 4,
-            "skill": 6,
-            "power": 5
+            "skill": 4,
+            "power": 3
           },
           "defend": {
             "skill": 2,
@@ -2873,6 +3253,14 @@ var armyData = {
           },
           "points": 234,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.332234Core\r"
         },
         {
@@ -2898,6 +3286,9 @@ var armyData = {
           },
           "points": 230,
           "type": "Core",
+          "special": {
+            "tags": ["spear", "nets"]
+          },
           "specialText": "?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. Nets: Rolls an extra Attack Die for each unmodified to hit roll of 1.432230Core\r"
         },
         {
@@ -2923,6 +3314,9 @@ var armyData = {
           },
           "points": 207,
           "type": "Core",
+          "special": {
+            "tags": ["nets"]
+          },
           "specialText": "Nets: Rolls an extra Attack Die for each unmodified to hit roll of 1.432207Core\r"
         },
         {
@@ -2948,6 +3342,20 @@ var armyData = {
           },
           "points": 179,
           "type": "Core",
+          "special": {
+            "tags": ["autoRally"],
+            "attackMods": [{
+              "tags": ["postRout"],
+              "dice": 2,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["postRout"],
+              "skill": 3,
+              "power": 0
+            }]
+          },
           "specialText": "?(+2) +0/+0 and ?+3/+0 during post-Rout Free Attacks. If Wolfkin Routs it automatically rallies at the end of turn.332179Core\r"
         },
         {
@@ -2973,6 +3381,9 @@ var armyData = {
           },
           "points": 307,
           "type": "N/A",
+          "special": {
+            "tags": ["noCommandCards", "noSpiritGuidance"]
+          },
           "specialText": "Is unaffected by your command Cards and may not be given Spirit Guidance. You may not play Command Cards while Bear Pack is attacking or defending. Unless your army currently contains a Bearkin Unit Bear Pack can only be given the Close Standing Order (with no Objective).552307N/A\r"
         },
         {
@@ -3023,6 +3434,20 @@ var armyData = {
           },
           "points": 380,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "javelin", "alwaysJavelin"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) No range penalty for Move and Shoot or Long Range. If Centaurs are not Engaged at the start of the turn and become Engaged on their front side they make a Range Attack at the start of the Combat Phase before normal attacks are rolled.322380N/A\r"
         },
         {
@@ -3048,6 +3473,20 @@ var armyData = {
           },
           "points": 271,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "nets"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.) Nets: Rolls an extra Attack Die for each unmodified to hit roll of 1.321271N/A\r"
         },
         {
@@ -3073,14 +3512,28 @@ var armyData = {
           },
           "points": 146,
           "type": "N/A",
+          "special": {
+            "tags": ["autoRally", "noCommandCards", "noSpiritualGuidance"],
+            "attackMods": [{
+              "tags": ["postRout"],
+              "dice": 2,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["postRout"],
+              "skill": 3,
+              "power": 0
+            }]
+          },
           "specialText": "?(+2) +0/+0 and ?+3/+0 during post-Rout Free Attacks. If Wolf Pack Routs it automatically rallies at the end of turn. Is unaffected by your command Cards and may not be given Spirit Guidance. You may not play Command Cards while Wolf Pack is attacking or defending. Unless your army currently contains a Wolfkin Unit Wolf Pack can only be given the Close Standing Order (with no Objective).151146N/A\r"
         },
         {
           "name": "Ravenwood Bowmasters",
           "attack": {
             "dice": 4,
-            "skill": 7,
-            "power": 5
+            "skill": 5,
+            "power": 3
           },
           "defend": {
             "skill": 2,
@@ -3098,6 +3551,14 @@ var armyData = {
           },
           "points": 335,
           "type": "Elite",
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "?(-0) -2/-2 and while Engaged.333335Elite\r"
         },
         {
@@ -3123,6 +3584,9 @@ var armyData = {
           },
           "points": 444,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome"]
+          },
           "specialText": "Fearsome. Large.554444Elite\r"
         }
       ]
@@ -3153,6 +3617,14 @@ var armyData = {
           },
           "points": 148,
           "type": "Core",
+          "special": {
+            "tags": ["cavalry"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging.?(6)6/6*?2*/3N/A135424242Core6\r"
         },
         {
@@ -3178,6 +3650,20 @@ var armyData = {
           },
           "points": 119,
           "type": "Core",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. Range attack uses the Pila rule.424216Core7\r"
         },
         {
@@ -3203,6 +3689,14 @@ var armyData = {
           },
           "points": 123,
           "type": "Core",
+          "special": {
+            "tags": ["cavalry"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging.?(6)6/6*?2*/3N/A135444295Core7\r"
         },
         {
@@ -3228,6 +3722,20 @@ var armyData = {
           },
           "points": 171,
           "type": "Core",
+          "special": {
+            "tags": ["spear"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. ?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. 323158Core5\r"
         },
         {
@@ -3253,6 +3761,20 @@ var armyData = {
           },
           "points": 174,
           "type": "Core",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. Range attack uses the Pila rule.424142Core9\r"
         },
         {
@@ -3278,6 +3800,20 @@ var armyData = {
           },
           "points": 202,
           "type": "Core",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. Range attack uses the Pila rule.332200Core4\r"
         },
         {
@@ -3303,6 +3839,34 @@ var armyData = {
           },
           "points": 193,
           "type": "Core",
+          "special": {
+            "tags": ["pila", "backsUp"],
+            "reinforce": 2,
+            "attackMods": [{
+              "tags": ["holdVsCharge", "vsLarge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["holdVsCharge", "vsCavalry"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["vsLarge"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            },
+            {
+              "tags": ["vsCavalry"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. Backs up any unit whose rear center point is closer than its front center point and within 5 of Triarii front center point. Units backed up by at least one Triarii get ?(+1) +0/+0 unless charging.222214Core5\r"
         },
         {
@@ -3328,6 +3892,14 @@ var armyData = {
           },
           "points": 73,
           "type": "Core",
+          "special": {
+            "tags": ["skirmisher", "javelin"],
+            "defendMods": [{
+              "tags": ["vsRanged"],
+              "skill": 2,
+              "power": 0
+            }]
+          },
           "specialText": "Skirmisher. Ranged attack uses the Javelin rule. ?+2/+0 vs. ranged attacks.?(5)6/7?2/4*135”*825900Core2\r"
         },
         {
@@ -3353,6 +3925,14 @@ var armyData = {
           },
           "points": 217,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging.?(6)6/6*?2*/3N/A135444345N/A32.6666666667\r"
         },
         {
@@ -3378,6 +3958,20 @@ var armyData = {
           },
           "points": 169,
           "type": "N/A",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. Range attack uses the Pila rule.321360N/A4\r"
         },
         {
@@ -3403,14 +3997,28 @@ var armyData = {
           },
           "points": 263,
           "type": "N/A",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "courageMods": [{
+                "tags": ["ifBackedUp"],
+                "courage":1
+            }],
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Courage +1 if backed up. Range attack uses the Pila rule.725500N/A4\r"
         },
         {
           "name": "Cretan Archers",
           "attack": {
             "dice": 3,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -3428,6 +4036,20 @@ var armyData = {
           },
           "points": 77,
           "type": "Elite",
+          "special": {
+            "tags": ["skirmisher"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }],
+            "defendMods": [{
+              "tags": ["vsRanged"],
+              "skill": 2,
+              "power": 0
+            }]
+          },
           "specialText": "Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged.?(6*)6/7?1/3N/AN/A5”545600Elite3\r"
         },
         {
@@ -3453,6 +4075,16 @@ var armyData = {
           },
           "points": 331,
           "type": "Elite",
+          "special": {
+            "tags": ["pila"],
+            "reinforce": 2,
+            "attackMods": [{
+              "tags": ["ifBackedUpByTriarii", "noCharge"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "(2 Reinforcement Boxes) Range attack uses the Pila rule.624691Elite3\r"
         }
       ]
@@ -3483,14 +4115,20 @@ var armyData = {
           },
           "points": 104,
           "type": "Core",
+          "special": {
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":2
+            }]
+          },
           "specialText": "Courage +2 while within the Leadership.343104Core6\r"
         },
         {
           "name": "Umenzi Atlatlmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 4,
+            "power": 4
           },
           "defend": {
             "skill": 1,
@@ -3508,6 +4146,18 @@ var armyData = {
           },
           "points": 115,
           "type": "Core",
+          "special": {
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":2
+            }],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 1,
+              "power": 1
+            }]
+          },
           "specialText": "Courage +2 while within the Leadership Range of any of your non-routing units. ?(-0) -1/-1 and while Engaged.342115Core7\r"
         },
         {
@@ -3533,6 +4183,13 @@ var armyData = {
           },
           "points": 184,
           "type": "Core",
+          "special": {
+            "tags": ["javelin"],
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":2
+            }]
+          },
           "specialText": "Courage +2 while within the Leadership Range of any of your non-routing units. Range attack uses the Javelin rule.?(5)5/5?2/13.510*3.5442184Core7\r"
         },
         {
@@ -3558,6 +4215,13 @@ var armyData = {
           },
           "points": 170,
           "type": "Core",
+          "special": {
+            "tags": ["spear"],
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":2
+            }]
+          },
           "specialText": "Courage +2 while within the Leadership Range of any of your non-routing units. ?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units.442170Core5\r"
         },
         {
@@ -3583,6 +4247,12 @@ var armyData = {
           },
           "points": 153,
           "type": "Core",
+          "special": {
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":2
+            }]
+          },
           "specialText": "Courage +2 while within the Leadership.442153Core6\r"
         },
         {
@@ -3608,6 +4278,9 @@ var armyData = {
           },
           "points": 226,
           "type": "N/A",
+          "special": {
+            "tags": ["noStandingOrderModifier", "noDirectControl"]
+          },
           "specialText": "Always has the Close Standing Order and may not be given a Standing Order Modifier or be directly controlled. Passes all Courage Checks.?(5)4/4?0/1N/AN/A5442226N/A7\r"
         },
         {
@@ -3683,6 +4356,13 @@ var armyData = {
           },
           "points": 77,
           "type": "N/A",
+          "special": {
+            "tags": ["noHeal", "noBless", "noFaithArmor", "destroyedIfRouted"],
+            "courageMods": [{
+                "tags": ["inLeadership"],
+                "courage":6
+            }]
+          },
           "specialText": "Courage +6 while within the Leadership Range of any of your non-routing units. Cannot be Healed Blessed or empowered with Faith Armor. You may not play Command Cards while The Possessed is attacking or defending. Destroyed if Routed.33377N/A6\r"
         },
         {
@@ -3758,7 +4438,28 @@ var armyData = {
           },
           "points": 523,
           "type": "Elite",
-          "specialSpears": "\"Thrown Spears\",\"?(\",3,\")\",5,\"/\",5,,,,,3.5,,,,,,,,,,0\r",
+          "special": {
+            "tags": ["colossal", "terrifying", "noHeal", "noBless", "noFaithArmor"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1,
+              "impactHits":2
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }],
+            extraAttacks: [{
+              "tags": ["ranged", "whenEngaged", "noMoveShootPenalty"],
+              "dice": 3,
+              "skill": 5,
+              "power": 5,
+              "range": "3.5"
+            }]
+          },
           "specialText": "Colossal. Terrifying. Cannot be Healed Blessed or empowered with Faith Armor. Giant War Elephant has two sets of attacks that are rolled independently; the elephant itself (main stat line) and thrown spears (lower line). During any turn all Giant War Elephant attacks must be rolled against a single enemy unit. Elephant Attacks: ?(+0) +0/+1 ? +1/+0 and causes two extra hits while Charging. (Simply add two dice when rolling to damage.) (These are in addition tot he normal Charging bonus.) Spear Attacks: This is a ranged attack even when Engaged. (Does not recieve Engaged combat modifiers and gets no Free Attacks vs. Routing Units and no attacks on opponents turn.) No penalty for Move and Shoot.?(4*)5/7*?1*/4N/A125745523Elite3\r"
         }
       ]
@@ -3789,14 +4490,17 @@ var armyData = {
           },
           "points": 130,
           "type": "Core",
+          "special": {
+            "tags": ["undead", "lesser"]
+          },
           "specialText": "Lesser Undead.?(5)5/5?2/1N/AN/A3.5181130Core6\r"
         },
         {
           "name": "Skeleton Bowmen",
           "attack": {
             "dice": 4,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -3814,6 +4518,15 @@ var armyData = {
           },
           "points": 150,
           "type": "Core",
+          "special": {
+            "tags": ["undead", "lesser"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }]
+          },
           "specialText": "Lesser Undead. Passes all Courage Checks. ?(-0) -2/-2 and while Engaged.221150Core8\r"
         },
         {
@@ -3839,6 +4552,9 @@ var armyData = {
           },
           "points": 149,
           "type": "Core",
+          "special": {
+            "tags": ["undead", "lesser"]
+          },
           "specialText": "Lesser Undead. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.5222149Core7\r"
         },
         {
@@ -3864,6 +4580,9 @@ var armyData = {
           },
           "points": 90,
           "type": "Core",
+          "special": {
+            "tags": ["undead", "lesser"]
+          },
           "specialText": "Lesser Undead. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.522290Core8\r"
         },
         {
@@ -3889,6 +4608,9 @@ var armyData = {
           },
           "points": 167,
           "type": "Core",
+          "special": {
+            "tags": ["undead", "lesser", "spear"]
+          },
           "specialText": "Lesser Undead. Passes all Courage Checks. ?(-1) -0/-0 while Charging. ?(+0) +1/+0 vs. Cavalry and/or Large units. ?(+0) +0/+2 while Holding vs. Charging Cavalry and/or Charging Large units. 222167Core6\r"
         },
         {
@@ -3914,6 +4636,20 @@ var armyData = {
           },
           "points": 219,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "undead", "lesser"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Lesser Undead. Cavalry. Passes all Courage Checks. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135221219N/A6\r"
         },
         {
@@ -3939,6 +4675,9 @@ var armyData = {
           },
           "points": 323,
           "type": "N/A",
+          "special": {
+            "tags": ["undead", "major", "large", "fearsome"]
+          },
           "specialText": "Major Undead. Large. Fearsome. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.5505323N/A4\r"
         },
         {
@@ -3989,6 +4728,9 @@ var armyData = {
           },
           "points": 232,
           "type": "N/A",
+          "special": {
+            "tags": ["undead", "major", "large", "fearsome"]
+          },
           "specialText": "Major Undead. Large. Fearsome. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.5505232N/A4\r"
         },
         {
@@ -4014,6 +4756,9 @@ var armyData = {
           },
           "points": 153,
           "type": "Elite",
+          "special": {
+            "tags": ["undead", "lesser", "large", "fearsome"]
+          },
           "specialText": "Lesser Undead. Large. Fearsome. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.5443153Elite5\r"
         },
         {
@@ -4039,6 +4784,20 @@ var armyData = {
           },
           "points": 516,
           "type": "Elite",
+          "special": {
+            "tags": ["cavalry", "undead", "greater"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Greater Undead. Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)?(6)6/6*?2*/3N/A135322516Elite4\r"
         },
         {
@@ -4064,6 +4823,9 @@ var armyData = {
           },
           "points": 510,
           "type": "Elite",
+          "special": {
+            "tags": ["undead", "greater", "large", "fearsome"]
+          },
           "specialText": "Greater Undead. Large. Fearsome. Passes all Courage Checks.?(5)5/5?2/1N/AN/A3.5333510Elite4\r"
         }
       ]

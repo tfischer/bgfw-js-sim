@@ -7,8 +7,8 @@ var armyData = {
           "name": "Balearic Slingers",
           "attack": {
             "dice": 3,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -26,7 +26,22 @@ var armyData = {
           },
           "points": 73,
           "type": "Core",
-          "specialText": "Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged. Ranged attack is Line of Sight.?(6*)6/7?1/3N/AN/A5”424242Core6\r"
+          "special": {
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }],
+            "defendMods": [{
+              "tags": ["ranged"],
+              "skill": 2,
+              "power": 0
+            }],
+            "rangedAttackType": "LOS",
+            "tags": ["skirmisher"]
+          },
+          "specialText": "Skirmisher. D+2/+0 vs. ranged attacks. A(-0) -2/-2 when engaged. Ranged attack is Line of Sight."
         },
         {
           "name": "Caetrati",
@@ -51,6 +66,14 @@ var armyData = {
           },
           "points": 85,
           "type": "Core",
+          "special": {
+            "tags": ["skirmisher","javelin"],
+            "defendMods": [{
+              "tags": ["ranged"],
+              "skill": 2,
+              "power": 0
+            }]
+          },
           "specialText": "Skirmisher. Ranged attack uses the Javelin rule. ?+2/+0 vs. ranged attacks.?(6*)6/7?1/3N/AN/A5”424216Core7\r"
         },
         {
@@ -76,6 +99,9 @@ var armyData = {
           },
           "points": 160,
           "type": "Core",
+          "special": {
+            "tags": ["impulsive"]
+          },
           "specialText": "Impulsive. (At the start of any turn Gallic Warriors are within 7 of an enemy unit's center point its orders change to Close.)?(6)6/6*?2*/3N/A135444295Core7\r"
         },
         {
@@ -101,6 +127,9 @@ var armyData = {
           },
           "points": 181,
           "type": "Core",
+          "special": {
+            "tags": ["pila"]
+          },
           "specialText": "Range attack uses the Pila rule.323158Core5\r"
         },
         {
@@ -126,6 +155,14 @@ var armyData = {
           },
           "points": 185,
           "type": "Core",
+          "special": {
+            "tags": ["cavalry"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging.?(6)6/6*?2*/3N/A135424142Core9\r"
         },
         {
@@ -151,6 +188,9 @@ var armyData = {
           },
           "points": 275,
           "type": "Core",
+          "special": {
+            "tags": ["pila"]
+          },
           "specialText": "Range attack uses the Pila rule.332200Core4\r"
         },
         {
@@ -176,6 +216,9 @@ var armyData = {
           },
           "points": 214,
           "type": "N/A",
+          "special": {
+            "tags": ["spear"]
+          },
           "specialText": "?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. 222214N/A5\r"
         },
         {
@@ -201,6 +244,14 @@ var armyData = {
           },
           "points": 222,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "impulsive"],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?+1/+0 while Charging. Impulsive. (At the start of any turn Gallic Warriors are within 7 of an enemy unit's center point its orders change to Close.)?(6)6/6*?2*/3N/A135825900N/A2\r"
         },
         {
@@ -226,6 +277,21 @@ var armyData = {
           },
           "points": 167,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "javelin", "skirmisher", "noImpact","opposingNoImpact"],
+            "attackMods": [{
+              "tags": ["opposing", "ranged"],
+              "dice": -2,
+              "skill": 0,
+              "power": 0
+            },
+            {
+              "tags": ["opposing", "cavalry"],
+              "dice": -2,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "Does not cause or take Impact Hits. Ranged attack uses the Javelin rule. Skirmishers Cavalry and ranged attacks against Numidian Cavalry get ?(-2) -0/-0.?(6)6/6*?2*/3N/A135444345N/A3\r"
         },
         {
@@ -251,6 +317,10 @@ var armyData = {
           },
           "points": 285,
           "type": "Elite",
+          "special": {
+            "tags": ["large", "fearsome", "opposingCavalryTerror", "noDetermination"],
+            "impactHits": 2
+          },
           "specialText": "Large. Fearsome. (Terrifying to Cavalry.) Two Impact Hits. May not be empowered with Determination.321360Elite4\r"
         },
         {
@@ -276,14 +346,17 @@ var armyData = {
           },
           "points": 345,
           "type": "Elite",
+          "special": {
+            "tags": ["pila"]
+          },
           "specialText": "Range attack uses the Pila rule.725500Elite4\r"
         },
         {
           "name": "Moorish Archers",
           "attack": {
             "dice": 3,
-            "skill": 5,
-            "power": 5
+            "skill": 3,
+            "power": 3
           },
           "defend": {
             "skill": 1,
@@ -301,6 +374,21 @@ var armyData = {
           },
           "points": 77,
           "type": "Elite",
+          "special": {
+            "tags": ["skirmisher"],
+            "attackMods": [{
+              "tags": ["ranged"],
+              "dice": 0,
+              "skill": 2,
+              "power": 2
+            }],
+            "defendMods": [{
+              "tags": ["ranged"],
+              "skill": 2,
+              "power": 0
+            }],
+            "rangedAttackType": "LOS"
+          },
           "specialText": "Skirmisher. ?+2/+0 vs. ranged attacks. ?(-0) -2/-2 when engaged. Ranged attack is Line of Sight. May not be empowered with Determination.?(6*)6/7?1/3N/AN/A5”545600Elite3\r"
         }
       ]
@@ -331,6 +419,39 @@ var armyData = {
           },
           "points": 96,
           "type": "Core",
+          "special": {
+            "tags": ["noPainTouch"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": -1,
+              "skill": 0,
+              "power": 0
+            },
+            {
+              "tags": ["holdVsCharge", "vsLarge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["holdVsCharge", "vsCavalry"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["vsLarge"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            },
+            {
+              "tags": ["vsCavalry"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. Can't be empowered with Pain Touch.424242Core2\r"
         },
         {
@@ -356,6 +477,38 @@ var armyData = {
           },
           "points": 132,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": -1,
+              "skill": 0,
+              "power": 0
+            },
+            {
+              "tags": ["holdVsCharge", "vsLarge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["holdVsCharge", "vsCavalry"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["vsLarge"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            },
+            {
+              "tags": ["vsCavalry"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. 424216Core00\r"
         },
         {
@@ -381,6 +534,38 @@ var armyData = {
           },
           "points": 214,
           "type": "Core",
+          "special": {
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": -1,
+              "skill": 0,
+              "power": 0
+            },
+            {
+              "tags": ["holdVsCharge", "vsLarge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["holdVsCharge", "vsCavalry"],
+              "dice": 0,
+              "skill": 0,
+              "power": 2
+            },
+            {
+              "tags": ["vsLarge"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            },
+            {
+              "tags": ["vsCavalry"],
+              "dice": 0,
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "?(-1) -0/-0 when charging. ?(+0) +1/+0 vs. cavalry or large units. ?(+0) +0/+2 when holding vs. charging cavalry or large. 444295Core00\r"
         },
         {
@@ -406,6 +591,20 @@ var armyData = {
           },
           "points": 181,
           "type": "Core",
+          "special": {
+            "tags": ["cavalry"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)323158Core00\r"
         },
         {
@@ -431,6 +630,9 @@ var armyData = {
           },
           "points": 255,
           "type": "Core",
+          "special": {
+            "tags": ["fearsome"]
+          },
           "specialText": "Fearsome.?(6)6/6*?2*/3N/A135424142Core00\r"
         },
         {
@@ -456,6 +658,15 @@ var armyData = {
           },
           "points": 284,
           "type": "N/A",
+          "special": {
+            "tags": ["fearsome"],
+            "attackMods": [{
+              "tags": ["bladeDance"],
+              "dice": 1,
+              "skill": 0,
+              "power": 0
+            }]
+          },
           "specialText": "Fearsome. ?(+1) +0/+0 for each Blade Dance box marked. At the beginning of each movement and command phase mark a Blade Dance box if this unit is engaged. At the end of your movement and command phase if it isn't engaged erase a Blade Dance box.332200N/A00\r"
         },
         {
@@ -481,6 +692,9 @@ var armyData = {
           },
           "points": 299,
           "type": "N/A",
+          "special": {
+            "tags": ["fearsome"]
+          },
           "specialText": "Fearsome.?(6)6/6*?2*/3N/A135222214N/A00\r"
         },
         {
@@ -506,6 +720,9 @@ var armyData = {
           },
           "points": 313,
           "type": "N/A",
+          "special": {
+            "tags": ["fearsome", "sirenSong"]
+          },
           "specialText": "Fearsome. Siren Song (Spell Attack) ?(5) 6/5 Range: 10.5 Line of Sight. Cast at the end of your Movement and Command Phase. No penalty for Move and Shoot. Damage from this attack can't cause rout checks. The first time a non-routing unit takes damage from Siren Song in a phase move itimmediately towards this unit as if it had a Clase order targeting it. This movement can cause a final rush.?(6)6/6*?2*/3N/A135825900N/A00\r"
         },
         {
@@ -531,6 +748,20 @@ var armyData = {
           },
           "points": 444,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "fearsome"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. Fearsome. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)444345N/A00\r"
         },
         {
@@ -556,6 +787,20 @@ var armyData = {
           },
           "points": 303,
           "type": "N/A",
+          "special": {
+            "tags": ["cavalry", "fearsome", "flying", "large"],
+            "attackMods": [{
+              "tags": ["charge"],
+              "dice": 0,
+              "skill": 0,
+              "power": 1
+            }],
+            "defendMods": [{
+              "tags": ["charge"],
+              "skill": 1,
+              "power": 0
+            }]
+          },
           "specialText": "Cavalry. Fearsome. Flying: 10.5 Large. ?(+0) +0/+1 and ?+1/+0 while Charging (This is in addition to the normal Charging Bonus.)444345N/A00\r"
         },
         {
@@ -581,6 +826,9 @@ var armyData = {
           },
           "points": 202,
           "type": "Elite",
+          "special": {
+            "tags": ["fearsome"]
+          },
           "specialText": "Fearsome.?(6)6/6*?2*/3N/A135321360Elite00\r"
         },
         {
@@ -606,6 +854,9 @@ var armyData = {
           },
           "points": 308,
           "type": "Elite",
+          "special": {
+            "tags": ["cavalry", "terrifying", "darkElfSpells"]
+          },
           "specialText": "Cavalry. Terrifying. Spells: Midnight's Chill Evil Eye Witching Hour.725500Elite00\r"
         },
         {
@@ -620,7 +871,7 @@ var armyData = {
             "power": 1
           },
           "ranged": {
-            "range": "21*"
+            "range": "21"
           },
           "courage": 13,
           "move": 3.5,
@@ -631,6 +882,12 @@ var armyData = {
           },
           "points": 429,
           "type": "Elite",
+          "special": {
+            "tags": ["terrifying", "darkElfRally"],
+            "attackMods": [{
+              "tags": ["ranged", "spell", "LOS"]
+            }]
+          },
           "specialText": "Terrifying. Ranged Attack is a spell and is Line of Sight. No penalty for Move and Shoot. When a friendly unit with a center point within 2.5 of any center point of this unit routs rally it at the end of the turn. When that unit makes a rout move it moves only 1.25.?(6*)6/7?1/3N/AN/A5”545600Elite067\r"
         }
       ]
